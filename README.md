@@ -1,7 +1,10 @@
 # COVID-19 Data Analysis and Visualization
 
-## 📊 Project Description
-This project analyzes COVID-19 data using Python. It includes data cleaning, analysis, visualization, and prediction of cases.
+## 📌 Project Overview
+This project is developed as part of the course **"Shkenca e të Dhënave dhe Vizualizimi me Python"**.  
+The main objective is to analyze real-world COVID-19 data and present insights through data visualization and basic predictive modeling.
+
+The project focuses on understanding the spread of the virus, comparing different countries, and identifying key trends using data science techniques.
 
 ## 📁 Dataset
 Data is taken from Our World in Data.
