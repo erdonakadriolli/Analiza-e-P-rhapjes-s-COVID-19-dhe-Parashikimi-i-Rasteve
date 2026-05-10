@@ -1,20 +1,4 @@
-"""
-============================================================
-  analysis.py
-  
-  PERGJEGJESIA: Pastrimi, analiza dhe Machine Learning
-  AUTORI:       Erdona Kadriolli
-  LENDA:        Shkenca e te Dhenave dhe Vizualizimi me Python
-  PROJEKTI:     Analiza e COVID-19 ne Kosove
-============================================================
 
-KY FAJLL PERMBAN 5 FUNKSIONE KRYESORE:
-  1. clean_covid()       - Data cleaning (pastrimi i te dhenave)
-  2. get_summary()       - Statistikat permbledhese
-  3. get_waves()         - Identifikimi i valeve te pandemise
-  4. get_correlation()   - Matrica e korrelacionit
-  5. predict_cases()     - Linear Regression per parashikim (BONUS)
-"""
 
 import pandas as pd
 import numpy as np
