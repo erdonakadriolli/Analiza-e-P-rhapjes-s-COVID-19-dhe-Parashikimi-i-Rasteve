@@ -1,8 +1,7 @@
 year,country,gdp_growth,unemployment_rate,school_close_days,online_learning_pct,poverty_rate_pct,internet_access_pct
-2018,Kosovo,3.8,29.6%,0.0,12,17.6,82
-2019,Kosovo ,4.2,25.9,0.0,15,,85
-2020,  Kosovo,-5.3,33.1,180.0,68,21.3,89
-2021,Kosovo,10.7,"28,4",90.0,72%,18.9,91
-2022,Kosovo,,27.6,0.0,,17.5,93
-2023,kosovo,3.5,,,35,16.8,95
-2020,  Kosovo,-5.3,33.1,180.0,68,21.3,89
+2018,Kosovo,3.8,29.6,0,12.0,17.6,82
+2019,Kosovo,4.2,25.9,0,15.0,17.1,85
+2020,Kosovo ,-5.3,33.1%,180,68.0,21.3,89
+2021, Kosovo,10.7,28.4,90,72.0,18.9,91
+2022,Kosovo,,27.6,0,,17.5,93
+2023,Kosovo,3.5,,0,35.0,16.8,95

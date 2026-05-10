@@ -1,37 +1,7 @@
-year,location,population,gdp_growth_pct,unemployment_rate,school_closing_days,online_learning_pct,internet_access_pct,poverty_rate_pct,period
-2018,Albania,2800000,2.53,11.3,0,28.8,70.6,20.1,Para-COVID
-2019,Albania,2800000,3.12,11.3,0,36.9,72.1,18.5,Para-COVID
-2020,Albania,2800000,-3.42,14.2,165,44.9,75.7,22.1,Gjate-COVID
-2021,Albania,2800000,3.7,11.7,90,55.1,79.3,18.8,Gjate-COVID
-2022,Albania,2800000,3.63,13.4,0,62.1,84.4,17.0,Post-COVID
-2023,Albania,2800000,2.78,13.6,0,70.3,85.8,17.6,Post-COVID
-2018,Bosnia and Herzegovina,3300000,2.95,16.5,0,26.7,68.7,19.6,Para-COVID
-2019,Bosnia and Herzegovina,3300000,3.05,15.3,0,35.7,74.5,19.7,Para-COVID
-2020,Bosnia and Herzegovina,3300000,-2.98,18.3,160,46.6,76.9,20.7,Gjate-COVID
-2021,Bosnia and Herzegovina,3300000,3.85,16.7,90,57.1,80.9,18.6,Gjate-COVID
-2022,Bosnia and Herzegovina,3300000,3.73,16.1,0,65.1,81.3,17.8,Post-COVID
-2023,Bosnia and Herzegovina,3300000,2.99,17.1,0,70.4,86.6,17.2,Post-COVID
-2018,Kosovo,1800000,3.06,25.5,0,31.8,69.4,18.6,Para-COVID
-2019,Kosovo,1800000,2.52,25.5,0,40.8,74.3,18.9,Para-COVID
-2020,Kosovo,1800000,-5.37,32.9,180,43.3,75.1,22.3,Gjate-COVID
-2021,Kosovo,1800000,3.9,31.2,90,51.3,79.1,16.7,Gjate-COVID
-2022,Kosovo,1800000,3.67,27.5,0,59.3,83.6,16.6,Post-COVID
-2023,Kosovo,1800000,3.01,27.6,0,67.5,85.0,16.2,Post-COVID
-2018,Montenegro,620000,2.88,15.6,0,31.1,71.9,20.7,Para-COVID
-2019,Montenegro,620000,2.84,15.2,0,36.0,73.0,19.4,Para-COVID
-2020,Montenegro,620000,-15.62,17.9,145,50.4,76.2,21.4,Gjate-COVID
-2021,Montenegro,620000,4.16,16.0,90,53.8,80.0,18.2,Gjate-COVID
-2022,Montenegro,620000,3.35,15.5,0,60.1,81.1,18.1,Post-COVID
-2023,Montenegro,620000,2.78,17.3,0,67.9,86.4,17.7,Post-COVID
-2018,North Macedonia,2100000,3.37,15.8,0,32.7,71.2,19.0,Para-COVID
-2019,North Macedonia,2100000,3.23,16.2,0,36.8,71.1,18.7,Para-COVID
-2020,North Macedonia,2100000,-4.36,20.6,170,45.6,76.8,22.3,Gjate-COVID
-2021,North Macedonia,2100000,3.83,18.0,90,54.9,79.5,19.0,Gjate-COVID
-2022,North Macedonia,2100000,3.67,17.2,0,61.0,80.1,18.6,Post-COVID
-2023,North Macedonia,2100000,2.86,17.9,0,67.0,86.4,16.5,Post-COVID
-2018,Serbia,6800000,3.25,10.4,0,29.6,69.7,19.5,Para-COVID
-2019,Serbia,6800000,3.36,10.4,0,35.5,72.6,19.6,Para-COVID
-2020,Serbia,6800000,-0.72,12.3,155,44.9,76.0,22.2,Gjate-COVID
-2021,Serbia,6800000,3.53,10.7,90,53.1,78.7,20.1,Gjate-COVID
-2022,Serbia,6800000,3.46,12.2,0,63.4,80.8,16.5,Post-COVID
-2023,Serbia,6800000,3.06,11.5,0,66.7,86.0,16.7,Post-COVID
+year,location,gdp_growth_pct,unemployment_rate,school_close_days,online_learning_pct,poverty_rate_pct,internet_access_pct,period
+2018,Kosovo,3.8,29.6,0,12,17.6,82,Para-COVID
+2019,Kosovo,4.2,25.9,0,15,17.1,85,Para-COVID
+2020,Kosovo,-5.3,33.1,180,68,21.3,89,Gjate-COVID
+2021,Kosovo,10.7,28.4,90,72,18.9,91,Gjate-COVID
+2022,Kosovo,4.3,27.6,0,45,17.5,93,Post-COVID
+2023,Kosovo,3.5,24.8,0,35,16.8,95,Post-COVID
