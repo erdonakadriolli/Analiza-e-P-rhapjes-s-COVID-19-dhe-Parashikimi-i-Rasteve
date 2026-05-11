@@ -172,9 +172,12 @@ def metric_card(icon, label, value):
 def load_data():
     """Load COVID data from multiple possible locations"""
     possible_paths = [
+        "../data/clean/covid_kosova_CLEAN.csv",
+        "data/clean/covid_kosova_CLEAN.csv",
         "covid_kosova_CLEAN.csv",
         "../covid_kosova_CLEAN.csv",
         "../../covid_kosova_CLEAN.csv",
+        os.path.join(os.path.dirname(__file__), "../data/clean/covid_kosova_CLEAN.csv"),
         os.path.join(os.path.dirname(__file__), "covid_kosova_CLEAN.csv"),
         os.path.join(os.path.dirname(__file__), "../covid_kosova_CLEAN.csv"),
     ]
@@ -184,22 +187,29 @@ def load_data():
             df = pd.read_csv(path)
 
             # Handle date column variations
-            if 'date' not in df.columns:
-                if 'Date' in df.columns:
-                    df['date'] = pd.to_datetime(df['Date'])
-                elif 'data' in df.columns:
-                    df['date'] = pd.to_datetime(df['data'])
+            if "date" not in df.columns:
+                if "Date" in df.columns:
+                    df["date"] = pd.to_datetime(df["Date"])
+                elif "data" in df.columns:
+                    df["date"] = pd.to_datetime(df["data"])
                 else:
+                    date_column_found = False
                     for col in df.columns:
-                        if 'date' in col.lower():
-                            df['date'] = pd.to_datetime(df[col])
+                        if "date" in col.lower():
+                            df["date"] = pd.to_datetime(df[col])
+                            date_column_found = True
                             break
-            else:
-                df['date'] = pd.to_datetime(df['date'])
 
-            df = df.sort_values('date')
+                    if not date_column_found:
+                        st.warning(f"No date column found in {path}")
+                        continue
+            else:
+                df["date"] = pd.to_datetime(df["date"])
+
+            df = df.sort_values("date")
             df.fillna(0, inplace=True)
             return df
+
         except FileNotFoundError:
             continue
         except Exception as e:
@@ -208,7 +218,6 @@ def load_data():
 
     st.error("Could not find covid_kosova_CLEAN.csv file!")
     return pd.DataFrame()
-
 
 # Load data
 df = load_data()

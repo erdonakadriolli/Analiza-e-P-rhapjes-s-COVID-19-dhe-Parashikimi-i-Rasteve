@@ -198,7 +198,7 @@ def plot_scatter(df):
 # GRAFIKU 7 - PAPUNESIA
 # =============================
 
-def plot_unemployment():
+def plot_unemployment(ds=None):
     periudha = ['Para COVID', 'Gjate COVID', 'Pas COVID']
     papunesia = [24, 31, 19]
     colors = ['green', 'red', 'blue']
@@ -225,7 +225,7 @@ def plot_unemployment():
 # GRAFIKU 8 - SHKOLLIMI
 # =============================
 
-def plot_education():
+def plot_education(ds=None):
     labels = ['Shkolla te Hapura', 'Online Learning']
     values = [40, 160]
     colors = ['lightgreen', 'lightcoral']
@@ -246,7 +246,7 @@ def plot_education():
 # GRAFIKU 9 - GDP
 # =============================
 
-def plot_gdp():
+def plot_gdp(ds=None):
     vite = ['2019', '2020', '2021', '2022']
     gdp = [4.5, -5.3, 6.1, 3.8]
     colors = ['green' if x >= 0 else 'red' for x in gdp]
@@ -411,6 +411,59 @@ def generate_all_visualizations():
         print(f"\nCurrent working directory: {os.getcwd()}")
     except Exception as e:
         print(f"\n❌ Unexpected error: {e}")
+
+# ============================================================
+# ALIASES - per perputhje me main.py
+# ============================================================
+
+def plot_deaths(df):
+    return plot_total_deaths(df)
+
+
+def plot_vaccination(df):
+    return plot_vaccinations(df)
+
+
+def plot_prediction(pred):
+    historical_df = pred["historical_df"].copy()
+    historical_df = historical_df.reset_index(drop=True)
+
+    import matplotlib.pyplot as plt
+    import os
+
+    plt.figure(figsize=(14, 6))
+
+    plt.plot(
+        historical_df["date"],
+        historical_df["total_cases"],
+        label="Te dhenat historike",
+        linewidth=2,
+        color="blue"
+    )
+
+    plt.plot(
+        pred["future_dates"],
+        pred["predictions"],
+        label="Parashikimi",
+        linewidth=3,
+        color="red",
+        linestyle="--"
+    )
+
+    plt.title("Parashikimi i Rasteve Totale me Linear Regression", fontsize=14, fontweight="bold")
+    plt.xlabel("Data")
+    plt.ylabel("Rastet Totale")
+    plt.legend()
+    plt.xticks(rotation=45)
+
+    plt.tight_layout()
+    os.makedirs("outputs", exist_ok=True)
+    plt.savefig("outputs/11_parashikimi_ml.png", dpi=100, bbox_inches="tight")
+    plt.close()
+
+
+def plot_panel(df, ds=None):
+    return plot_dashboard_panel(df)
 
 if __name__ == '__main__':
     generate_all_visualizations()
